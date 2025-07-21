@@ -3,41 +3,43 @@
 
 ## 📋 Overview :-
 
-A web app built with Streamlit and Groq Llama 3, which:
-✅ Summarizes any uploaded PDF
-✅ Generates a multiple-choice quiz based on the content
-✅ Lets the user take the quiz & shows the score.
+A web app built with **Streamlit** and **Groq Llama 3**, which :  
 
-## 🌟Features :-
+-  Summarizes any uploaded PDF  
+-  Generates a multiple-choice quiz based on the content  
+-  Lets the user take the quiz and shows the score  
 
-✨ Upload a PDF and extract its text.
-✨ Get a clear, concise summary of the document.
-✨ Auto-generated quiz with MCQs and answers.
-✨ Take the quiz interactively and see your score.
-✨ Responsive, clean UI styled with CSS.
+
+## 🌟 Features :-
+
+⭐ Upload a PDF and extract its text  
+⭐ Get a clear, concise summary of the document  
+⭐ Auto-generated quiz with MCQs and answers  
+⭐ Take the quiz interactively and see your score  
+⭐ Responsive, clean UI styled with CSS  
+ 
 
 ## 📂 Project Structure :-
 
-ai-pdf-quiz-app/
-├── app.py                 # 🚀 Main Streamlit app (frontend & logic)
-├── groq_api.py            # 🧠 Handles Groq API calls (summary & quiz)
-├── requirements.txt       # 📦 Python dependencies
-├── .env                   # 🔑 Your API key (never push this to GitHub)
-├── .gitignore             # 🙈 Files & folders to ignore in git
-├── README.md              # 📄 Project documentation
-├── static/
-│   └── style.css          # 🎨 Custom CSS styles for Streamlit
-├── venv/                  # 🐍 Virtual environment (optional, not pushed)
-└── pdf_utils.py              # 📂 (optional) to save uploaded PDFs
+- `app.py` — 🚀 Main Streamlit app (frontend & logic)
+- `groq_api.py` — 🧠 Handles Groq API calls (summary & quiz)
+- `requirements.txt` — 📦 Python dependencies
+- `.env` — 🔑 Your API key (never push this to GitHub)
+- `.gitignore` — 🙈 Files & folders to ignore in git
+- `README.md` — 📄 Project documentation
+- `static/style.css` — 🎨 Custom CSS styles for Streamlit
+- `venv/` — 🐍 Virtual environment (optional, not pushed)
+- `pdf_utils.py` — 📂 PDF handling utility (optional)
+
 
 
 ## 🖥️ Tech Stack :-
 
-Python
-Streamlit
-Groq API
-Llama 3
-PyPDF2
+- Python
+- Streamlit
+- Groq API
+- Llama 3
+- PyPDF2
 
 
 ## 🚀 Installation :-
