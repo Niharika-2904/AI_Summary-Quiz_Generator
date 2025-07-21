@@ -1,4 +1,4 @@
-# 📄 AI PDF Summary & Quiz Generator
+# 📄 AI Summary - Quiz Generator
 
 
 ## 📋 Overview :-
