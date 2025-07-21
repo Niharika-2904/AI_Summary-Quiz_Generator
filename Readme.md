@@ -7,7 +7,9 @@ A web app built with **Streamlit** and **Groq Llama 3**, which :
 
 -  Summarizes any uploaded PDF  
 -  Generates a multiple-choice quiz based on the content  
--  Lets the user take the quiz and shows the score  
+-  Lets the user take the quiz and shows the score
+
+### 🌐 Live Demo on Streamlit - https://niharika-2904-ai-summary-quiz-generator-app-fruumh.streamlit.app/
 
 
 ## 🌟 Features :-
