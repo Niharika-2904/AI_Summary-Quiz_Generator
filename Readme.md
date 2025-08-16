@@ -69,7 +69,7 @@ GROQ_API_KEY=your_groq_api_key_here
 ### Run the App;
 
 streamlit run app.py
-Visit http://localhost:8501 in your browser.
+
 
 ## 👩‍💻 Author :-
 🌟Niharika Saxena
