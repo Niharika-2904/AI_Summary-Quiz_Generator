@@ -1,7 +1,6 @@
 import streamlit as st
 import PyPDF2
 import json
-import os
 from dotenv import load_dotenv
 from groq_api import get_summary, generate_quiz
 
