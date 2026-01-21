@@ -20,7 +20,7 @@ def _call_api(text_chunk, prompt):
     )
     return response.choices[0].message.content.strip()
 
-def split_text(text, max_words=1500):
+def split_text(text, max_words=700):
     """
     Splits text into chunks of up to max_words words.
     """
@@ -34,7 +34,7 @@ def get_summary(text):
     If the text is too long, splits it into chunks and summarizes each.
     """
     prompt = "Summarize the following PDF text clearly and concisely:"
-    max_words = 1500
+    max_words = 700
 
     if len(text.split()) <= max_words:
         return _call_api(text, prompt)

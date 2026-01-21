@@ -64,16 +64,23 @@ def upload_page():
         st.success("✅ PDF text extracted.")
 
         if st.button("Generate Summary"):
-            with st.spinner("Generating summary..."):
-                st.session_state.summary = get_summary(st.session_state.pdf_text)
-            st.success("✅ Summary generated. Check the Summary page.")
+            if st.session_state.pdf_text.strip():
+                with st.spinner("Generating summary..."):
+                   st.session_state.summary = get_summary(st.session_state.pdf_text)
+                st.success("✅ Summary generated. Check the Summary page.")
+            else:
+                st.error("❌ No readable text found in PDF.")
 
         if st.button("Generate Quiz"):
-            with st.spinner("Generating quiz..."):
-                st.session_state.quiz = generate_quiz(st.session_state.pdf_text)
-                st.session_state.quiz_answers = {}  # reset answers
-                st.session_state.quiz_submitted = False
-            st.success("✅ Quiz generated. Check the Quiz page.")
+            if st.session_state.pdf_text.strip():
+                with st.spinner("Generating quiz..."):
+                   st.session_state.quiz = generate_quiz(st.session_state.pdf_text)
+                   st.session_state.quiz_answers = {}
+                   st.session_state.quiz_submitted = False
+                st.success("✅ Quiz generated. Check the Quiz page.")
+            else:
+                st.error("❌ No readable text found in PDF.")
+
 
 # Summary Page
 def summary_page():
@@ -153,8 +160,10 @@ def extract_text(pdf_file):
     reader = PyPDF2.PdfReader(pdf_file)
     text = ""
     for page in reader.pages:
-        text += page.extract_text() or ""
-    return text
+        page_text = page.extract_text()
+        if page_text:
+            text += page_text() 
+    return text.strip()
 
 # Run App
 if not st.session_state.logged_in:
