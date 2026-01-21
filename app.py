@@ -153,7 +153,7 @@ def extract_text(pdf_file):
     reader = PyPDF2.PdfReader(pdf_file)
     text = ""
     for page in reader.pages:
-        text += page.extract_text()
+        text += page.extract_text() or ""
     return text
 
 # Run App
@@ -161,3 +161,6 @@ if not st.session_state.logged_in:
     login_page()
 else:
     main_app()
+
+
+   
