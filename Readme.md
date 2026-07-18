@@ -31,7 +31,7 @@ A web app built with **Streamlit** and **Groq Llama 3**, which :
 - `README.md` — 📄 Project documentation
 - `static/style.css` — 🎨 Custom CSS styles for Streamlit
 - `venv/` — 🐍 Virtual environment (optional, not pushed)
-- `pdf_utils.py` — 📂 PDF handling utility (optional)
+- `pdf_utils.py` — 📂 PDF handling utility
 
 
 
